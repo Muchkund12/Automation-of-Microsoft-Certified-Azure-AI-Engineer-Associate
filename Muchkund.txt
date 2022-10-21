@@ -1,0 +1,153 @@
+import org.junit.Test;
+import org.openqa.selenium.By;  
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.JavascriptExecutor;
+  
+
+public class Muchkund {
+             
+	    public static void main (String args[])  throws InterruptedException {
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\User\\eclipse-workspace\\1\\msedgedriver.exe");
+	    WebDriver driver=new EdgeDriver(); 
+	    driver.navigate().to("https://learn.microsoft.com/en-us/certifications/"); //it take so much of time when i am using navigation 
+	    driver.manage().window().maximize();
+	    Thread.sleep(8000);
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript("window.scrollBy(0,1300)", "");
+	    driver.findElement(By.xpath("//*[@id=\"microsoft-certified-azure-ai-engineer-associate\"]/a")).click();
+	    Thread.sleep(8000);
+	    JavascriptExecutor js1 = (JavascriptExecutor) driver;
+	    js1.executeScript("window.scrollBy(0,1300)", "");
+	    driver.findElement(By.xpath("//*[@id=\"tab-learning-paths\"]/span")).click();
+	    Thread.sleep(8000);
+	    driver.findElement(By.xpath("//*[@id=\"start-learn-path\"]/span")).click();// module 1 start
+	    JavascriptExecutor js2 = (JavascriptExecutor) driver;
+	    js2.executeScript("window.scrollBy(0,200)", "");
+	    Thread.sleep(8000);
+	    driver.navigate().back();// module 1 end
+	    JavascriptExecutor js3 = (JavascriptExecutor) driver;
+	    js3.executeScript("window.scrollBy(0,600)", "");
+	    Thread.sleep(8000);
+	    driver.findElement(By.xpath("//*[@id=\"learn.wwl.provision-manage-azure-cognitive-services_title\"]")).click();
+	    JavascriptExecutor js4 = (JavascriptExecutor) driver;
+	    js4.executeScript("window.scrollBy(0,300)", "");
+	    Thread.sleep(8000);// To pause that amount of time
+	    JavascriptExecutor js5 = (JavascriptExecutor) driver;
+	    js5.executeScript("window.scrollBy(0,600)", "");
+	    Thread.sleep(8000);
+	    JavascriptExecutor js6 = (JavascriptExecutor) driver;
+	    js6.executeScript("window.scrollBy(0,600)", "");// scrollBy(horizontal,vertical)
+	    Thread.sleep(8000);
+	    JavascriptExecutor js7 = (JavascriptExecutor) driver;
+	    js7.executeScript("window.scrollBy(0,600)", "");// To scroll down
+	    Thread.sleep(8000);
+	    driver.navigate().back();// To back the page
+	    Thread.sleep(8000);
+	    JavascriptExecutor js8 = (JavascriptExecutor) driver;
+	    js8.executeScript("window.scrollBy(0,-1100)", "");// To scroll up
+	    Thread.sleep(8000);
+	    driver.findElement(By.xpath("//*[@id=\"learn.wwl.process-translate-text-azure-cognitive-services_title\"]")).click();
+	    JavascriptExecutor js9 = (JavascriptExecutor) driver;
+	    js9.executeScript("window.scrollBy(0,300)", "");
+	    Thread.sleep(8000);
+	    JavascriptExecutor js10 = (JavascriptExecutor) driver;
+	    js10.executeScript("window.scrollBy(0,600)", "");
+	    Thread.sleep(8000);
+	    JavascriptExecutor js11 = (JavascriptExecutor) driver;
+	    js11.executeScript("window.scrollBy(0,900)", "");
+	    Thread.sleep(8000);
+	    driver.navigate().back();
+	    Thread.sleep(8000);
+	    JavascriptExecutor js12 = (JavascriptExecutor) driver;
+	    js12.executeScript("window.scrollBy(0,400)", "");
+	    driver.findElement(By.xpath("//*[@id=\"learn.wwl.process-translate-speech-azure-cognitive-speech-services_title\"]")).click();
+	    Thread.sleep(8000);
+	    JavascriptExecutor js13 = (JavascriptExecutor) driver;
+	    js13.executeScript("window.scrollBy(0,600)", "");
+	    Thread.sleep(8000);
+	    JavascriptExecutor js14 = (JavascriptExecutor) driver;
+	    js14.executeScript("window.scrollBy(0,900)", "");
+	    Thread.sleep(8000);
+	    driver.navigate().back();
+	    Thread.sleep(8000);
+	    driver.findElement(By.xpath("//*[@id=\"learn.wwl.create-language-solution-azure-cognitive-services_title\"]")).click();
+	    Thread.sleep(8000);
+	    JavascriptExecutor js15 = (JavascriptExecutor) driver;
+	    js15.executeScript("window.scrollBy(0,600)", "");
+	    Thread.sleep(8000);
+	    JavascriptExecutor js16 = (JavascriptExecutor) driver;
+	    js16.executeScript("window.scrollBy(0,900)", "");
+	    Thread.sleep(8000);
+	    driver.navigate().back();
+	    Thread.sleep(8000);
+	    JavascriptExecutor js17 = (JavascriptExecutor) driver;
+	    js17.executeScript("window.scrollBy(0,-1100)", "");
+	    driver.findElement(By.xpath("//*[@id=\"tabpanel-learning-paths\"]/div[2]/button/span[1]")).click();	
+	    Thread.sleep(8000);
+	    driver.findElement(By.xpath("//*[@id=\"learn.wwl.build-qna-solution_title\"]")).click();
+	    JavascriptExecutor js18 = (JavascriptExecutor) driver;
+	    js18.executeScript("window.scrollBy(0,600)", "");
+	    Thread.sleep(8000);
+	    driver.navigate().back();
+	    Thread.sleep(8000);
+	    JavascriptExecutor js19 = (JavascriptExecutor) driver;
+	    js19.executeScript("window.scrollBy(0,-700)", "");
+	    driver.findElement(By.xpath("//*[@id=\"tabpanel-learning-paths\"]/div[2]/button/span[1]")).click();
+	    Thread.sleep(8000);
+	    driver.findElement(By.xpath("//*[@id=\"learn.wwl.create-conversational-ai-solutions_title\"]")).click();
+	    Thread.sleep(8000);
+	    JavascriptExecutor js20 = (JavascriptExecutor) driver;
+	    js20.executeScript("window.scrollBy(0,700)", "");
+	    Thread.sleep(8000);
+	    JavascriptExecutor js21 = (JavascriptExecutor) driver;
+	    js21.executeScript("window.scrollBy(0,700)", "");
+	    Thread.sleep(8000);
+	    driver.navigate().back();
+	    Thread.sleep(8000);
+	    JavascriptExecutor js22 = (JavascriptExecutor) driver;
+	    js22.executeScript("window.scrollBy(0,-700)", "");
+	    driver.findElement(By.xpath("//*[@id=\"tabpanel-learning-paths\"]/div[2]/button/span[1]")).click();
+	    Thread.sleep(8000);
+	    driver.findElement(By.xpath("//*[@id=\"learn.wwl.create-computer-vision-solutions-azure-cognitive-services_title\"]")).click();
+	    Thread.sleep(8000);
+	    JavascriptExecutor js23 = (JavascriptExecutor) driver;
+	    js23.executeScript("window.scrollBy(0,700)", "");
+	    Thread.sleep(8000);
+	    JavascriptExecutor js24 = (JavascriptExecutor) driver;
+	    js24.executeScript("window.scrollBy(0,700)", "");
+	    Thread.sleep(8000);
+	    JavascriptExecutor js25 = (JavascriptExecutor) driver;
+	    js25.executeScript("window.scrollBy(0,700)", "");
+	    Thread.sleep(8000);
+	    JavascriptExecutor js26 = (JavascriptExecutor) driver;
+	    js26.executeScript("window.scrollBy(0,200)", "");
+	    Thread.sleep(8000);
+	    driver.navigate().back();
+	    JavascriptExecutor js27 = (JavascriptExecutor) driver;
+	    js27.executeScript("window.scrollBy(0,-700)", "");
+	    driver.findElement(By.xpath("//*[@id=\"tabpanel-learning-paths\"]/div[2]/button/span[1]")).click();
+	    Thread.sleep(8000);
+	    driver.findElement(By.xpath("//*[@id=\"learn.wwl.extract-text-from-images-documents_title\"]")).click();
+	    Thread.sleep(8000);
+	    JavascriptExecutor js28 = (JavascriptExecutor) driver;
+	    js28.executeScript("window.scrollBy(0,700)", "");
+	    Thread.sleep(8000);
+	    JavascriptExecutor js29 = (JavascriptExecutor) driver;
+	    js29.executeScript("window.scrollBy(0,700)", "");
+	    driver.navigate().back();
+	    Thread.sleep(8000);
+	    JavascriptExecutor js30 = (JavascriptExecutor) driver;
+	    js30.executeScript("window.scrollBy(0,-700)", "");
+	    driver.findElement(By.xpath("//*[@id=\"tabpanel-learning-paths\"]/div[2]/button/span[1]")).click();
+	    Thread.sleep(8000);
+	    driver.findElement(By.xpath("//*[@id=\"learn.wwl.implement-knowledge-mining-azure-cognitive-search_title\"]")).click();
+	    JavascriptExecutor js31 = (JavascriptExecutor) driver;
+	    js31.executeScript("window.scrollBy(0,700)", "");
+	    Thread.sleep(8000);
+	    JavascriptExecutor js32 = (JavascriptExecutor) driver;
+	    js32.executeScript("window.scrollBy(0,700)", "");
+	    
+	}
+
+}
