@@ -147,6 +147,9 @@ public class Muchkund {
 	    Thread.sleep(8000);
 	    JavascriptExecutor js32 = (JavascriptExecutor) driver;
 	    js32.executeScript("window.scrollBy(0,700)", "");
+	    driver.navigate().back();
+	    driver.quit;
+	    
 	    
 	}
 
